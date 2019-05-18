@@ -47,19 +47,19 @@ class Waste extends React.Component {
       {this.state.lists.map((x) => {
         return (
           <Grid key={x.value} item className="m-2">
-            <Card className={classes.card}>
-                <CardActionArea>
-                    <CardMedia className={classes.media} image={require(`../Images/products/${x.value}.jpg`)} />
-                </CardActionArea>
-                    <CardContent>
-                        <Typography component="subtitle1" variant="subtitle1">
-                            {x.title}
-                        </Typography>
-                        <Typography component="p" style={wordStyle}>
-                            CA${x.price}
-                        </Typography>
-                    </CardContent>
-            </Card>
+          <Card className={classes.card}>
+          <CardActionArea>
+          <CardMedia className={classes.media} image={require(`../Images/products/${x.value}.jpg`)} />
+          </CardActionArea>
+          <CardContent>
+          <Typography component="subtitle1" variant="subtitle1">
+          {x.title}
+          </Typography>
+          <Typography component="p" style={wordStyle}>
+          CA${x.price}
+          </Typography>
+          </CardContent>
+          </Card>
           </Grid>
         )
       })}

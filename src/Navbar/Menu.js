@@ -1,11 +1,6 @@
 import React from 'react';
 import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 
-const noDecorationLink = {
-  textDecoration: 'none',
-  color: 'rgba(255,255,255,.5)'
-}
-
 function Menu() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">

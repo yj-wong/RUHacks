@@ -1,9 +1,11 @@
 import React from 'react';
-import { Container,  Row, Col } from 'react-bootstrap';
+// eslint-disable-next-line
+import {Container, Row, Col} from 'react-bootstrap';
 // eslint-disable-next-line
 
 import startups from '../Data/startups.json';
 
+// eslint-disable-next-line
 const cardStyle = {
   color: 'black',
   maxWidth: '90%',
@@ -16,7 +18,7 @@ const rowStyle = {
   // borderBottom: 'white'
 }
 const hStyle = {
-  color: 'white', 
+  color: 'white',
   textAlign: 'left'
 }
 const pStyle = {
@@ -42,8 +44,6 @@ class Feature extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
-
     return (
       <div>
       {this.state.lists.map((x) => {

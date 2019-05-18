@@ -1,17 +1,18 @@
 import React from 'react';
 
+// eslint-disable-next-line
 const parallax = {
-    backgroundImage: 'url("../Images/home/bg.jpg")'
+  backgroundImage: 'url("../Images/home/bg.jpg")'
 }
 
 class Home extends React.Component {
-    render() {
-        return(
-            <div>
-                This is Home
-            </div>
-        )
-    }
+  render() {
+    return(
+      <div>
+      This is Home
+      </div>
+    )
+  }
 }
 
 export default Home;
