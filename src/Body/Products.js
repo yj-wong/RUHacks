@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { Container } from 'react-bootstrap';
+import Product_list from './Product_list.js'
 
 const styles = theme => ({
   root: {
@@ -13,9 +14,14 @@ const styles = theme => ({
     height: 280,
     width: 200,
   },
+
+  image: {
+      height: 200,
+      width: 100,
+  }
 });
 
-const items = Array.from(Array(10).keys())
+const items = Array.from(Array(10).keys());
 
 class Products extends React.Component {
   state = {
@@ -39,7 +45,9 @@ class Products extends React.Component {
                 <Grid container className={classes.demo} justify="center" spacing={Number(spacing)}>
                 {items.map(value => (
                     <Grid key={value} item>
-                    <Paper className={classes.paper} />
+                        <Paper className={classes.paper}>
+                            <img className={classes.img} alt="" src="../Images/beetle1.svg" />
+                        </Paper>
                     </Grid>
                 ))}
                 </Grid>

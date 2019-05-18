@@ -4,10 +4,9 @@ import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 
 function Menu() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="justify-content-center" sticky="top">
-    <Navbar.Brand href="#home" className="ml-5">Browse</Navbar.Brand>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav">
+    <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
     <Nav>
     <Nav.Link href="#startups"  className="mx-5">Featured Startups</Nav.Link>
 
