@@ -6,6 +6,7 @@ import Menu from './Navbar/Menu.js';
 import Topbar from './Navbar/Topbar.js';
 import Home from './Body/Home.js';
 import Products from './Body/Products.js';
+import Features from './Body/Feature.js';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <div id="body" className="App-header">
         <Router>
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/products" component={Products} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/features" component={Features} />
+            <Route exact path="/products" component={Products} />
           </Switch>
         </Router>
       </div>

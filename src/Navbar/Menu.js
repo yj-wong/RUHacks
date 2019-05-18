@@ -12,13 +12,12 @@ const noDecorationLink = {
 
 function Menu() {
   return (
-    <Router>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
     <Nav>
-    <Nav.Link className="mx-5"><Link to="/" style={noDecorationLink}>Home</Link></Nav.Link>
-    <Nav.Link className="mx-5"><Link to="/features" style={noDecorationLink}>Featured Startups</Link></Nav.Link>
+    <Nav.Link className="mx-5">Home</Nav.Link>
+    <Nav.Link className="mx-5">Featured Startups</Nav.Link>
 
     <NavDropdown title="Green Products" id="nav-dropdown" className="mx-5">
     <NavDropdown.Item href="products">Home & Living</NavDropdown.Item>
@@ -45,11 +44,6 @@ function Menu() {
     </Nav>
     </Navbar.Collapse>
     </Navbar>
-
-    <Route exact path="/" component={Home} />
-    <Route path="/features" component={Features} />
-    </Router>
-
   )
 }
 
