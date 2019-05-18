@@ -7,21 +7,23 @@ import Topbar from './Navbar/Topbar.js';
 import Home from './Body/Home.js';
 import Products from './Body/Products.js';
 import Features from './Body/Feature.js';
+import Waste from './Body/Waste.js';
 
 function App() {
   return (
     <div className="App">
-      <Topbar />
-      <Menu />
-      <div id="body" className="App-header">
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/features" component={Features} />
-            <Route exact path="/products" component={Products} />
-          </Switch>
-        </Router>
-      </div>
+    <Topbar />
+    <Menu />
+    <div id="body" className="App-header">
+    <Router>
+    <Switch>
+    <Route exact path="/" component={Home} />
+    <Route exact path="/features" component={Features} />
+    <Route exact path="/products" component={Products} />
+    <Route exact path="/waste" component={Waste} />
+    </Switch>
+    </Router>
+    </div>
     </div>
   );
 }
