@@ -1,14 +1,24 @@
 import React from 'react';
 
 import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Products from '../Body/Products.js';
+import Feature from '../Body/Feature.js';
+
+const noDecorationLink = {
+  textDecoration: 'none',
+  color: 'rgba(255,255,255,.5)'
+}
 
 function Menu() {
   return (
+    <Router>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
     <Nav>
-    <Nav.Link href="#startups"  className="mx-5">Featured Startups</Nav.Link>
+    <Nav.Link className="mx-5"><Link to="/" style={noDecorationLink}>Home</Link></Nav.Link>
+    <Nav.Link className="mx-5"><Link to="/features" style={noDecorationLink}>Featured Startups</Link></Nav.Link>
 
     <NavDropdown title="Green Products" id="nav-dropdown" className="mx-5">
     <NavDropdown.Item>Home & Living</NavDropdown.Item>
@@ -35,7 +45,32 @@ function Menu() {
     </Nav>
     </Navbar.Collapse>
     </Navbar>
+
+    <Route exact path="/" component={Home} />
+    <Route path="/features" component={Features} />
+    </Router>
+
   )
+}
+
+function Home() {
+  return (
+    <header className="App-header">
+      <div id="body">
+        <Products />
+      </div>
+    </header>
+  );
+}
+
+function Features() {
+  return (
+    <header className="App-header">
+      <div id="body">
+        <Feature />
+      </div>
+    </header>
+  );
 }
 
 export default Menu;

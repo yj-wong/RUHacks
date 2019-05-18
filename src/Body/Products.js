@@ -32,8 +32,6 @@ const styles = theme => ({
   }
 });
 
-// const items = Array.from(Array(10).keys());
-
 class Products extends React.Component {
   state = {
     spacing: '16',
@@ -49,7 +47,6 @@ class Products extends React.Component {
   render() {
     const { classes } = this.props;
     const { spacing } = this.state;
-
 
     return (
       <Container>
