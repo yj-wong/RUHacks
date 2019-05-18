@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Company 1",
+    "image": "../Images/c1.png",
+    "description": "this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description.",
+    "value":1
+  },
+  {
+    "title": "Company 2",
+    "image": "../Images/c2.png",
+    "description": "this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description.",
+    "value":2
+  },
+  {
+    "title": "Company 3",
+    "image": "../Images/c3.png",
+    "description": "this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description.",
+    "value":3
+  },
+  {
+    "title": "Company 4",
+    "image": "../Images/c4.png",
+    "description": "this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description.",
+    "value":4
+  },
+  {
+    "title": "Company 5",
+    "image": "../Images/c5.png",
+    "description": "this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description.",
+    "value":5
+  },
+  {
+    "title": "Company 6",
+    "image": "../Images/c6.png",
+    "description": "this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description. this is a company description.",
+    "value": 6
+  }
+]
