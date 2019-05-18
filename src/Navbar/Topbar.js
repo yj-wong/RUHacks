@@ -7,7 +7,7 @@ import logo from '../Images/brand_logo.svg';
 const reduceMargin = {
   marginTop: '-15px',
   marginBottom: '-20px'
-};
+}
 
 class Topbar extends React.Component {
   constructor(props, context) {
@@ -32,7 +32,7 @@ class Topbar extends React.Component {
   render() {
     return [
       <Navbar bg="dark" variant="dark" style={reduceMargin}>
-      <Navbar.Brand href="#home"><img src={logo} width="75" alt="logo"></img></Navbar.Brand>
+      <Navbar.Brand href="home"><img src={logo} width="75" alt="logo"></img></Navbar.Brand>
       <Form inline>
       <FormControl type="text" placeholder="Search" className="sm-2 mr-1" />
       <Button variant="outline-info">Search</Button>

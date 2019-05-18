@@ -16,8 +16,8 @@ function Menu() {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
     <Nav>
-    <Nav.Link className="mx-5">Home</Nav.Link>
-    <Nav.Link className="mx-5">Featured Startups</Nav.Link>
+    <Nav.Link className="mx-5" href="home">Home</Nav.Link>
+    <Nav.Link className="mx-5" href="features">Featured Startups</Nav.Link>
 
     <NavDropdown title="Green Products" id="nav-dropdown" className="mx-5">
     <NavDropdown.Item href="products">Home & Living</NavDropdown.Item>
