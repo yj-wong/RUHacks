@@ -8,10 +8,10 @@ function Menu() {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
     <Nav>
-    <Nav.Link href="#startups"  className="mx-5">Featured Startups</Nav.Link>
+    <Nav.Link href="startups"  className="mx-5">Featured Startups</Nav.Link>
 
     <NavDropdown title="Green Products" id="nav-dropdown" className="mx-5">
-    <NavDropdown.Item>Home & Living</NavDropdown.Item>
+    <NavDropdown.Item href="products">Home & Living</NavDropdown.Item>
     <NavDropdown.Item>Clothing and Apparels</NavDropdown.Item>
     <NavDropdown.Item>Food & Beverage Packaging</NavDropdown.Item>
     <NavDropdown.Item>Utensiles and Containers</NavDropdown.Item>
