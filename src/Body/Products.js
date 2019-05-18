@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { Container } from 'react-bootstrap';
 // eslint-disable-next-line
-import Product_list from './Product_list.js'
 
 import items from '../Data/items.json';
 
@@ -27,8 +26,7 @@ const styles = theme => ({
   },
 
   image: {
-    height: 200,
-    width: 100,
+    width: 200,
   }
 });
 
@@ -36,7 +34,7 @@ const styles = theme => ({
 
 class Products extends React.Component {
   state = {
-    spacing: '16',
+    spacing: '12',
     lists: items
   };
 
@@ -53,14 +51,14 @@ class Products extends React.Component {
 
     return (
       <Container>
-      <Grid justify="center" className={classes.root} spacing={16} item xs={12} container className={classes.demo} justify="center" spacing={Number(spacing)}>
+      <Grid justify="center" className={classes.root} spacing={12} item xs={12} container className={classes.demo} justify="center" spacing={Number(spacing)}>
 
       {this.state.lists.map((x) => {
         return (
           <Grid key={x.value} item className="m-2">
           <Paper className="container" className={classes.paper} style={wordStyle}>
-          <p>Title: {x.title}</p>
           <img src={require(`../Images/${x.value}.jpg`)} alt="" style={imgStyle} className={classes.img}/>
+          <p>Title: {x.title}</p>
           <p>Description: {x.description}</p>
           </Paper>
           </Grid>
