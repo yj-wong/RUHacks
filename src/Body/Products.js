@@ -1,32 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import { Container } from 'react-bootstrap';
+import { Grid, Card, CardContent, CardActionArea, CardMedia, Typography, withStyles } from '@material-ui/core/';
 // eslint-disable-next-line
 
 import items from '../Data/items.json';
 
 const wordStyle = {
-  color: 'black'
-}
-const imgStyle = {
-  maxHeight: '50%',
-  maxWidth: '100%'
+  color: 'grey'
 };
 
 const styles = theme => ({
   root: {
-    flexGrow: 1,
+    flex: 1,
+    Grow: 1,
   },
-  paper: {
-    height: 280,
-    width: 200,
+  card: {
+    height: 300,
+    width: 250,
   },
-
-  image: {
-    width: 200,
+  media: {
+    height: 220,
   }
 });
 
@@ -53,11 +47,19 @@ class Products extends React.Component {
       {this.state.lists.map((x) => {
         return (
           <Grid key={x.value} item className="m-2">
-          <Paper className="container" className={classes.paper} style={wordStyle}>
-          <img src={require(`../Images/${x.value}.jpg`)} alt="" style={imgStyle} className={classes.img}/>
-          <p>Title: {x.title}</p>
-          <p>Description: {x.description}</p>
-          </Paper>
+            <Card className={classes.card}>
+                <CardActionArea href="products"> 
+                    <CardMedia className={classes.media} image={require(`../Images/${x.value}.jpg`)} />
+                </CardActionArea>
+                    <CardContent>
+                        <Typography component="subtitle1" variant="subtitle1">
+                            {x.title}
+                        </Typography>
+                        <Typography component="p" style={wordStyle}>
+                            CA${x.price}
+                        </Typography>
+                    </CardContent>
+            </Card>
           </Grid>
         )
       })}

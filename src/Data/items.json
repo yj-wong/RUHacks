@@ -1,39 +1,59 @@
 [
   {
-    "title": "Glass Bottles",
+    "title": "Water Saving Showerhead",
     "image": "../Images/1.jpg",
     "description": "this is a description",
+    "price": "13.59",
     "value":1
   },
 
   {
-    "title": "Lobster",
+    "title": "Water Saving Showerhead",
     "image": "../Images/2.jpg",
     "description": "this is a description",
+    "price": "15.30",
     "value":2
   },
   {
-    "title": "Paper Bags",
+    "title": "Biodegradable Diapers",
     "image": "../Images/3.jpg",
     "description": "this is a description",
+    "price": "5.30",
     "value":3
   },
   {
-    "title": "Bananas",
+    "title": "Bamboo Hairbrush",
     "image": "../Images/4.jpg",
     "description": "this is a description",
+    "price": "4.30",
     "value":4
   },
   {
-    "title": "Yellow Leaves",
+    "title": "Beeswax Wrap",
     "image": "../Images/5.jpg",
     "description": "this is a description",
+    "price": "5.14",
     "value":5
   },
   {
-    "title": "Green Leaves",
+    "title": "Beeswax Wrap",
     "image": "../Images/6.jpg",
     "description": "this is a description",
+    "price": "4.47",
     "value": 6
+  },
+  {
+    "title": "Loofah",
+    "image": "../Images/6.jpg",
+    "description": "this is a description",
+    "price": "2.10",
+    "value": 7
+  },
+  {
+    "title": "Bamboo Toothbrush",
+    "image": "../Images/6.jpg",
+    "description": "this is a description",
+    "price": "6.12",
+    "value": 8
   }
 ]
