@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Glass Bottles",
+    "image": "../Images/1.jpg",
+    "description": "this is a description",
+    "value":1
+  },
+
+  {
+    "title": "Lobster",
+    "image": "../Images/2.jpg",
+    "description": "this is a description",
+    "value":2
+  },
+  {
+    "title": "Paper Bags",
+    "image": "../Images/3.jpg",
+    "description": "this is a description",
+    "value":3
+  },
+  {
+    "title": "Bananas",
+    "image": "../Images/4.jpg",
+    "description": "this is a description",
+    "value":4
+  },
+  {
+    "title": "Yellow Leaves",
+    "image": "../Images/5.jpg",
+    "description": "this is a description",
+    "value":5
+  },
+  {
+    "title": "Green Leaves",
+    "image": "../Images/6.jpg",
+    "description": "this is a description",
+    "value": 6
+  }
+]

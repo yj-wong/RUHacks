@@ -4,7 +4,15 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { Container } from 'react-bootstrap';
+// eslint-disable-next-line
 import Product_list from './Product_list.js'
+
+import items from '../Data/items.json';
+
+const imgStyle = {
+  maxHeight: '60%',
+  maxWidth: '100%'
+};
 
 const styles = theme => ({
   root: {
@@ -16,16 +24,17 @@ const styles = theme => ({
   },
 
   image: {
-      height: 200,
-      width: 100,
+    height: 200,
+    width: 100,
   }
 });
 
-const items = Array.from(Array(10).keys());
+// const items = Array.from(Array(10).keys());
 
 class Products extends React.Component {
   state = {
     spacing: '16',
+    lists: items
   };
 
   handleChange = key => (event, value) => {
@@ -38,21 +47,23 @@ class Products extends React.Component {
     const { classes } = this.props;
     const { spacing } = this.state;
 
+
     return (
-        <Container>
-            <Grid container className={classes.root} spacing={16}>
-            <Grid item xs={12}>
-                <Grid container className={classes.demo} justify="center" spacing={Number(spacing)}>
-                {items.map(value => (
-                    <Grid key={value} item>
-                        <Paper className={classes.paper}>
-                            <img className={classes.img} alt="" src="../Images/beetle1.svg" />
-                        </Paper>
-                    </Grid>
-                ))}
-                </Grid>
-            </Grid>
-            </Grid>
+      <Container>
+      <Grid justify="center" className={classes.root} spacing={16} item xs={12} container className={classes.demo} justify="center" spacing={Number(spacing)}>
+
+      {this.state.lists.map((x) => {
+        return (
+          <Grid key={x.value} item className="m-2">
+          <Paper className="container" className={classes.paper}>
+          <p>Title: {x.title}</p>
+          <img src={require(`../Images/${x.value}.jpg`)} alt="" style={imgStyle} className={classes.img}/>
+          <p>Description: {x.description}</p>
+          </Paper>
+          </Grid>
+        )
+      })}
+      </Grid>
       </Container>
     );
   }
