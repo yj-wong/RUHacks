@@ -16,11 +16,11 @@ const styles = theme => ({
     Grow: 1,
   },
   card: {
-    height: 300,
+    height: 320,
     width: 250,
   },
   media: {
-    height: 220,
+    height: 250,
   }
 });
 

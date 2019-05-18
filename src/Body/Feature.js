@@ -13,21 +13,29 @@ const cardStyle = {
 }
 
 const rowStyle = {
-  borderColor: 'white'
+  borderColor: 'white',
+  // borderBottom: 'white'
 }
 const hStyle = {
+  color: 'white', 
   textAlign: 'left'
 }
 const pStyle = {
   fontSize: '14px',
   fontFamily: "Arial",
   textAlign: 'justify',
-  lineHeight: '1.25'
+  lineHeight: '1.25',
+  color: '#bbb'
 }
 const imgStyle = {
   maxHeight: '100%',
   maxWidth: '100%'
-};
+}
+
+const noDeco = {
+  color: 'inherit',
+  textDecoration: 'none'
+}
 
 class Feature extends React.Component {
   state = {
@@ -41,25 +49,13 @@ class Feature extends React.Component {
       <div>
       {this.state.lists.map((x) => {
         return (
-          // <Grid container justify="center">
-          //   <Card style={cardStyle}>
-          //     <Typography component="h5">
-          //       {x.title}
-          //     </Typography>
-          //     <Typography component="p" style={pStyle}>
-          //       {x.description} 
-          //     </Typography>
-          //   </Card>
-          // </Grid>
-
-
-          <Row className="mb-3 mt-3 mx-5">
-          <Col md={8}>
-          <h2 style={hStyle} className="p-1">{x.title}</h2>
+          <Row className="container mb-3 mt-3 mx-5" style={rowStyle}>
+          <Col md={7}  className="container mt-5">
+          <h3 style={hStyle} className="p-1"><a href={x.link} style={noDeco}>{x.title}</a></h3>
           <p style={pStyle}>{x.description}</p>
           </Col>
-          <Col md={2} className="container mt-5">
-          <img src={require(`../Images/c${x.value}.png`)} alt="" style={imgStyle}/>
+          <Col md={3} className="container mt-5">
+          <img src={require(`../Images/c${x.value}.jpg`)} alt="" style={imgStyle}/>
           </Col>
           </Row>
         )
