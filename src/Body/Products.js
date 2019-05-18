@@ -9,8 +9,11 @@ import Product_list from './Product_list.js'
 
 import items from '../Data/items.json';
 
+const wordStyle = {
+  color: 'black'
+}
 const imgStyle = {
-  maxHeight: '60%',
+  maxHeight: '50%',
   maxWidth: '100%'
 };
 
@@ -55,7 +58,7 @@ class Products extends React.Component {
       {this.state.lists.map((x) => {
         return (
           <Grid key={x.value} item className="m-2">
-          <Paper className="container" className={classes.paper}>
+          <Paper className="container" className={classes.paper} style={wordStyle}>
           <p>Title: {x.title}</p>
           <img src={require(`../Images/${x.value}.jpg`)} alt="" style={imgStyle} className={classes.img}/>
           <p>Description: {x.description}</p>
