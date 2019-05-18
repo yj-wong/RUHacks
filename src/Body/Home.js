@@ -1,5 +1,9 @@
 import React from 'react';
 
+const parallax = {
+    backgroundImage: 'url("../Images/home/bg.jpg")'
+}
+
 class Home extends React.Component {
     render() {
         return(

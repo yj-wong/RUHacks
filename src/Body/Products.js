@@ -5,6 +5,7 @@ import { Grid, Card, CardContent, CardActionArea, CardMedia, Typography, withSty
 // eslint-disable-next-line
 
 import items from '../Data/items.json';
+import Product_page from './Product_page.js';
 
 const wordStyle = {
   color: 'grey'
@@ -23,6 +24,8 @@ const styles = theme => ({
     height: 250,
   }
 });
+
+
 
 class Products extends React.Component {
   state = {
@@ -48,8 +51,8 @@ class Products extends React.Component {
         return (
           <Grid key={x.value} item className="m-2">
             <Card className={classes.card}>
-                <CardActionArea href="products"> 
-                    <CardMedia className={classes.media} image={require(`../Images/${x.value}.jpg`)} />
+                <CardActionArea> 
+                    <CardMedia className={classes.media} image={require(`../Images/products/${x.value}.jpg`)} />
                 </CardActionArea>
                     <CardContent>
                         <Typography component="subtitle1" variant="subtitle1">

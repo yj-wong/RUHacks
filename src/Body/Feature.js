@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container,  Row, Col } from 'react-bootstrap';
-import { Card, CardContent, CardActionArea, CardMedia, Typography, withStyles, Grid } from '@material-ui/core/';
 // eslint-disable-next-line
 
 import startups from '../Data/startups.json';
@@ -55,7 +54,7 @@ class Feature extends React.Component {
           <p style={pStyle}>{x.description}</p>
           </Col>
           <Col md={3} className="container mt-5">
-          <img src={require(`../Images/c${x.value}.jpg`)} alt="" style={imgStyle}/>
+          <img src={require(`../Images/feature/c${x.value}.jpg`)} alt="" style={imgStyle}/>
           </Col>
           </Row>
         )
