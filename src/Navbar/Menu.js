@@ -1,21 +1,36 @@
 import React from 'react';
 
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 
 function Menu() {
   return (
-    <Navbar bg="dark" variant="dark" className="justify-content-center">
-    <Nav variant="pills">
-    <Nav.Link href="#pricing"  className="mx-5">Featured Startups</Nav.Link>
-    <NavDropdown title="Green Products" id="nav-dropdown" className="mx-5">
-    <NavDropdown.Item>Product 1</NavDropdown.Item>
-    <NavDropdown.Item>Product 2</NavDropdown.Item>
-    <NavDropdown.Item>
-    Product 3
-    </NavDropdown.Item>
-    </NavDropdown>
-    <Nav.Link href="#features" className="mx-5">Recycle Requests/Pickups</Nav.Link>
-    </Nav>
+    <Navbar bg="dark" variant="dark" className="justify-content-center" sticky="top">
+        <Nav>
+            <Nav.Link href="#startups"  className="mx-5">Featured Startups</Nav.Link>
+
+            <NavDropdown title="Green Products" id="nav-dropdown" className="mx-5">
+                <NavDropdown.Item>Home & Living</NavDropdown.Item>
+                <NavDropdown.Item>Clothing and Apparels</NavDropdown.Item>
+                <NavDropdown.Item>Food & Beverage Packaging</NavDropdown.Item>
+                <NavDropdown.Item>Utensiles and Containers</NavDropdown.Item>
+                <NavDropdown.Item>Others</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Recycle Material Requests/Pickups" id="nav-dropdown" className="mx-5">
+                <NavDropdown.Item>Electronic Waste</NavDropdown.Item>
+                <NavDropdown.Item>Food Waste</NavDropdown.Item>
+                <NavDropdown.Item>Old Clothes/Fabrics</NavDropdown.Item>
+                <NavDropdown.Item>Plastic</NavDropdown.Item>
+                <NavDropdown.Item>Others</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Events" id="nav-dropdown" className="mx-5">
+                <NavDropdown.Item>Cleanup Day</NavDropdown.Item>
+                <NavDropdown.Item>Item Swap</NavDropdown.Item>
+                <NavDropdown.Item>Tree Planting</NavDropdown.Item>
+                <NavDropdown.Item>Others</NavDropdown.Item>
+            </NavDropdown>
+        </Nav>
     </Navbar>
   )
 }
