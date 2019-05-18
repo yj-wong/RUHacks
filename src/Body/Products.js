@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { Container } from 'react-bootstrap';
+// eslint-disable-next-line
 import Product_list from './Product_list.js'
 
 const styles = theme => ({

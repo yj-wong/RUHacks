@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 // eslint-disable-next-line
 import {Nav, Navbar, Form, FormControl, Button, Modal} from 'react-bootstrap';
 import logo from '../Images/brand_logo.svg';
