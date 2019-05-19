@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 import { Grid, Card, CardContent, CardActionArea, CardMedia, Typography, withStyles } from '@material-ui/core/';
 // eslint-disable-next-line
 
-import items from '../Data/items.json';
+import electronicwaste from '../Data/electronicwaste.json';
 
 const wordStyle = {
   color: 'grey'
@@ -24,12 +24,10 @@ const styles = theme => ({
   }
 });
 
-
-
-class Products extends React.Component {
+class Waste extends React.Component {
   state = {
     spacing: '12',
-    lists: items
+    lists: electronicwaste
   };
 
   handleChange = key => (event, value) => {
@@ -71,8 +69,8 @@ class Products extends React.Component {
   }
 }
 
-Products.propTypes = {
+Waste.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Products);
+export default withStyles(styles)(Waste);
