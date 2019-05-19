@@ -8,6 +8,7 @@ import Home from './Body/Home.js';
 import Products from './Body/Products.js';
 import Features from './Body/Feature.js';
 import Waste from './Body/Waste.js';
+import Event from './Body/Event.js';
 
 function App() {
   return (
@@ -15,14 +16,13 @@ function App() {
     <Topbar />
     <Menu />
     <div id="body" className="App-header">
-    <Router>
     <Switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/features" component={Features} />
     <Route exact path="/products" component={Products} />
     <Route exact path="/waste" component={Waste} />
+    <Route exact path="/events" component={Event} />
     </Switch>
-    </Router>
     </div>
     </div>
   );

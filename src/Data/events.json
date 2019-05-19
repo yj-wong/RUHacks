@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Cleanup Day Event 1",
+    "image": "../Images/c1.png",
+    "description": "Plastic is a resilient and versatile material, but it’s not that great for the environment — not plastic that’s made from petroleum, anyway. But scientists are cooking up a better alternative.",
+    "value":1,
+    "link": "https://www.4ocean.com/",
+    "date": "01/01/2019"
+  },
+  {
+    "title": "Cleanup Day Event 2",
+    "image": "../Images/c2.png",
+    "description": "4ocean is a United States company focused on removing plastic waste from the ocean and is funded by selling bracelets made from recycled materials. The company pledges to remove one pound of trash from the ocean and coastlines for each bracelet that is sold.",
+    "value":2,
+    "link": "https://www.4ocean.com/",
+    "date": "01/01/2019"
+  },
+  {
+    "title": "Cleanup Day Event 3",
+    "image": "../Images/c3.png",
+    "description": "Polystyrene is one of the most-used plastics in the world. It’s used to make styrofoam, CD cases, insulation and any container with the No. 6 recycling symbol. In Montreal, it’s the only type of hard plastic that’s banned entirely from recycling bins. But a local company has developed a new process that it says will make recycling polystyrene easier and cheaper.",
+    "value":3,
+    "link": "https://polyvert.ca/en/",
+    "date": "01/01/2019"
+  },
+  {
+    "title": "Cleanup Day Event 4",
+    "image": "../Images/c4.png",
+    "description": "Evrnu is Stacy’s textile technology company that specializes in the breakdown of garment waste, converting it into a new, high quality raw material with which to create new textiles. It is one of the first companies to do this with cotton (one of the industry’s most excessive materials, of which 30% of the entire world’s clothes are made from), and the only company that they know of doing this in the US.",
+    "value":4,
+    "link": "https://www.evrnu.com/",
+    "date": "01/01/2019"
+  },
+  {
+    "title": "Cleanup Day Event 5",
+    "image": "../Images/c5.png",
+    "description": "Too Good To Go is Europe’s leading app for fighting food waste. The free app connects customers to restaurants and stores that have unsold, surplus food, and counts 7.5 million users across nine countries, along with 15,000 partners including retailers, hotels and restaurants such as Carrefour, Accor and YO! Sushi.",
+    "value":5,
+    "link": "https://toogoodtogo.com/en",
+    "date": "01/01/2019"
+  },
+  {
+    "title": "Cleanup Day Event 6",
+    "image": "../Images/c6.png",
+    "description": "Unboxed at 1263 Dundas St. W. is trying to do its part to clean up the environment. The store is set to have its official grand opening in March. The owners say they launched the venture because they're frustrated at the amount of waste they see all around them, including in the restaurant industry where they used to work.",
+    "value": 6,
+    "link": "https://unboxedmarket.com/",
+    "date": "01/01/2019"
+  }
+]
