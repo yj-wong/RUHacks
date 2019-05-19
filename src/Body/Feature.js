@@ -22,7 +22,7 @@ const hStyle = {
   textAlign: 'left'
 }
 const pStyle = {
-  fontSize: '14px',
+  fontSize: '16px',
   fontFamily: "Arial",
   textAlign: 'justify',
   lineHeight: '1.25',

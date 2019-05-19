@@ -26,10 +26,10 @@ function Menu() {
     </NavDropdown>
 
     <NavDropdown title="Events" id="nav-dropdown" className="mx-5">
-    <NavDropdown.Item href="events">Cleanup Day</NavDropdown.Item>
-    <NavDropdown.Item>Item Swap</NavDropdown.Item>
-    <NavDropdown.Item>Tree Planting</NavDropdown.Item>
-    <NavDropdown.Item>Others</NavDropdown.Item>
+    <NavDropdown.Item href="events">All</NavDropdown.Item>
+    <NavDropdown.Item href="events#cleanup">Cleanup Day</NavDropdown.Item>
+    <NavDropdown.Item href="events#swap">Item Swap</NavDropdown.Item>
+    <NavDropdown.Item href="events#plant">Tree Planting</NavDropdown.Item>
     </NavDropdown>
     </Nav>
     </Navbar.Collapse>

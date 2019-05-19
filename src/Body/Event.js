@@ -15,6 +15,7 @@ const cardStyle = {
 
 const rowStyle = {
   borderColor: 'white',
+  width: '75vw'
   // borderBottom: 'white'
 }
 const hStyle = {
@@ -22,15 +23,14 @@ const hStyle = {
   textAlign: 'left'
 }
 const pStyle = {
-  fontSize: '14px',
+  fontSize: '16px',
   fontFamily: "Arial",
   textAlign: 'justify',
   lineHeight: '1.25',
   color: '#bbb'
 }
 const imgStyle = {
-  maxHeight: '100%',
-  maxWidth: '100%'
+  height: '5rem'
 }
 
 const noDeco = {
@@ -43,7 +43,8 @@ const lineStyle = {
   color: '#00FFAA',
   width: '50%',
   border: 'none',
-  height: '1px'
+  height: '1px',
+  marginRight: '40%'
 }
 
 class Event extends React.Component {
@@ -51,26 +52,42 @@ class Event extends React.Component {
     lists: events
   };
 
+  filter = () => {
+    console.log(window.location.hash);
+    if (window.location.hash === "#cleanup") {
+      return 1;
+    } else if (window.location.hash === "#swap") {
+      return 2;
+    } else if (window.location.hash === "#plant") {
+      return 3;
+    } else {
+      return 0;
+    }
+  }
+
   render() {
     return (
       <div>
       {this.state.lists.map((x) => {
-        return (
-          <>
-          <Row className="container mb-3 mt-3 mx-5" style={rowStyle}>
-          <Col md={7}  className="container mt-5">
-          <h3 style={hStyle} className="p-1"><a href={x.link} style={noDeco}>{x.title}</a></h3>
-          <p style={pStyle}>{x.description}</p>
-          </Col>
-          <Col md={3} className="container mt-5">
-          <img src={require(`../Images/feature/c${x.value}.jpg`)} alt="" style={imgStyle}/>
-          </Col>
-          </Row>
-          <br />
-          <hr style={lineStyle} />
-          </>
-        )
-      })}
+        if (x.value == this.filter() || this.filter() == 0) {
+          return (
+            <>
+
+            <Row className="container mb-3 mt-3 mx-5" style={rowStyle}>
+            <Col md={7}  className="container mt-5">
+            <h3 style={hStyle} className="p-1"><a href={x.link} style={noDeco}>{x.title}</a></h3>
+            <p style={pStyle}>{x.location}</p>
+            <p style={pStyle}>{x.time}</p>
+            </Col>
+            <Col md={3} className="container mt-5">
+            <img src={require(`../Images/events/${x.value}.svg`)} alt="" style={imgStyle}/>
+            </Col>
+            </Row>
+            <hr style={lineStyle} />
+            </>
+          )
+        }
+        })}
       </div>
     );
   }

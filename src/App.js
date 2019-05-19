@@ -22,6 +22,10 @@ function App() {
     <Route exact path="/products" component={Products} />
     <Route exact path="/waste" component={Waste} />
     <Route exact path="/events" component={Event} />
+    <Route exact path="/events#cleanup" component={Event} />
+    <Route exact path="/events#swap" component={Event} />
+    <Route exact path="/events#plant" component={Event} />
+    <Route exact path="/events#others" component={Event} />
     </Switch>
     </div>
     </div>

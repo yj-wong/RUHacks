@@ -38,16 +38,6 @@ class Waste extends React.Component {
 
     return (
       <>
-        {/* <div id ="electronics">
-          <Jumbotron style={boxStyle}>
-            <h1>
-              Electronic Waste
-            </h1>
-          </Jumbotron>
-        </div>
-        <div id ="food">
-          food
-        </div> */}
         <br />
         {this.state.lists.map((x) => {
           return(
