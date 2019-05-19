@@ -46,7 +46,7 @@ const lineStyle = {
   height: '1px'
 }
 
-class Feature extends React.Component {
+class Event extends React.Component {
   state = {
     lists: events
   };
@@ -76,4 +76,4 @@ class Feature extends React.Component {
   }
 }
 
-export default Feature;
+export default Event;
