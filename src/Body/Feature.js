@@ -38,6 +38,14 @@ const noDeco = {
   textDecoration: 'none'
 }
 
+const lineStyle = {
+  backgroundColor: '#00FFAA',
+  color: '#00FFAA',
+  width: '50%',
+  border: 'none',
+  height: '1px'
+}
+
 class Feature extends React.Component {
   state = {
     lists: startups
@@ -48,6 +56,7 @@ class Feature extends React.Component {
       <div>
       {this.state.lists.map((x) => {
         return (
+          <>
           <Row className="container mb-3 mt-3 mx-5" style={rowStyle}>
           <Col md={7}  className="container mt-5">
           <h3 style={hStyle} className="p-1"><a href={x.link} style={noDeco}>{x.title}</a></h3>
@@ -57,6 +66,9 @@ class Feature extends React.Component {
           <img src={require(`../Images/feature/c${x.value}.jpg`)} alt="" style={imgStyle}/>
           </Col>
           </Row>
+          <br />
+          <hr style={lineStyle} />
+          </>
         )
       })}
       </div>

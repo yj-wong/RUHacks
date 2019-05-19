@@ -5,13 +5,6 @@ import bg from '../Images/home/bg.jpg';
 import research from '../Images/home/research.jpg';
 import recycle from '../Images/home/recycle.jpg';
 
-const bgStyle = {
-    width: '100%',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'
-}
-
 const left = {
     textAlign: 'left'
 }
@@ -28,7 +21,6 @@ class Home extends React.Component {
     render() {
         return(
             <>
-            <img style={bgStyle} src={bg} alt="" />
             <br />
             <Container>
                 <Row>
@@ -45,13 +37,16 @@ class Home extends React.Component {
                             Learn about the scientific effort put into researches and support the dedicated startups and small businesses.
                         </p>
                         <br />
-                        <Button variant="outline-info" href="feature">Find Out</Button>
+                        <Button variant="outline-info" href="features">Find Out</Button>
                     </Col>
                     <Col>
                         <img src={research} alt="" width="100%"/>
                     </Col>
                 </Row>
             <br />
+        </Container>
+            <div className="bgStyle"><Container className="p-5 m-5"></Container></div>
+        <Container>
             <br />
                 <Row>
                     <Col>
@@ -73,7 +68,11 @@ class Home extends React.Component {
                         <img src={recycle} alt="" width="100%"/>
                     </Col>
                     <Col style={right}>
-                        <h2>One Man's Trash, Another's Treasure</h2>
+                        <h2>
+                            One Man's Trash,
+                            <br />
+                            Another's Treasure
+                        </h2>
                         <br/>
                         <p style={pStyle}>
                             Request and donate your unwanted/recycable materials on this website.

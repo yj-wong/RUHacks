@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-attachment: fixed;
 }
 
 .App-logo {
@@ -21,6 +22,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.bgStyle {
+  width: 100%;
+  background-image: url("./Images/home/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 @keyframes App-logo-spin {
