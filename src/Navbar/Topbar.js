@@ -31,7 +31,7 @@ class Topbar extends React.Component {
   render() {
     return [
       <Navbar bg="dark" variant="dark" style={reduceMargin}>
-      <Navbar.Brand href="home"><img src={logo} width="75" alt="logo"></img></Navbar.Brand>
+      <Navbar.Brand href="/"><img src={logo} width="75" alt="logo"></img></Navbar.Brand>
       <Form inline>
       <FormControl type="text" placeholder="Search" className="sm-2 mr-1" />
       <Button variant="outline-info">Search</Button>
