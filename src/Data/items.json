@@ -47,5 +47,54 @@
     "image": "../Images/6.jpg",
     "price": "6.12",
     "value": 8
+  },
+  {
+    "title": "Ceramic Travel Mug",
+    "image": "../Images/1.jpg",
+    "price": "13.59",
+    "value":9
+  },
+
+  {
+    "title": "Bamboo Cutlery",
+    "image": "../Images/2.jpg",
+    "price": "15.30",
+    "value":10
+  },
+  {
+    "title": "Bamboo Toothbrush",
+    "image": "../Images/3.jpg",
+    "price": "5.30",
+    "value":11
+  },
+  {
+    "title": "Metal Straws",
+    "image": "../Images/4.jpg",
+    "price": "4.30",
+    "value":12
+  },
+  {
+    "title": "Cloth Diaper",
+    "image": "../Images/5.jpg",
+    "price": "5.14",
+    "value":13
+  },
+  {
+    "title": "Bar Soap",
+    "image": "../Images/6.jpg",
+    "price": "4.47",
+    "value": 14
+  },
+  {
+    "title": "Shampoo Bar",
+    "image": "../Images/6.jpg",
+    "price": "2.10",
+    "value": 15
+  },
+  {
+    "title": "Lunchbox",
+    "image": "../Images/6.jpg",
+    "price": "6.12",
+    "value": 16
   }
 ]

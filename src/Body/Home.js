@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container,  Row, Col, Button } from 'react-bootstrap';
 
-import bg from '../Images/home/bg.jpg';
 import research from '../Images/home/research.jpg';
 import recycle from '../Images/home/recycle.jpg';
 

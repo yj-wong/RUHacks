@@ -9,6 +9,7 @@ const reduceMargin = {
 }
 
 const brandStyle = {
+
   color: '#00FFAA'
 }
 
@@ -38,7 +39,7 @@ class Topbar extends React.Component {
       <Navbar bg="dark" variant="dark" style={reduceMargin}>
       <Navbar.Brand href="/" style={brandStyle}>
         <img src={logo} width="75" alt="logo"/>
-        ZER0_WASTE
+        ZER0̸_WASTE
       </Navbar.Brand>
       <Form inline>
       <FormControl type="text" placeholder="Search" className="sm-2 mr-1" />
