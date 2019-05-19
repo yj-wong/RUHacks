@@ -26,7 +26,7 @@ function Menu() {
     </NavDropdown>
 
     <NavDropdown title="Events" id="nav-dropdown" className="mx-5">
-    <NavDropdown.Item>Cleanup Day</NavDropdown.Item>
+    <NavDropdown.Item href="events">Cleanup Day</NavDropdown.Item>
     <NavDropdown.Item>Item Swap</NavDropdown.Item>
     <NavDropdown.Item>Tree Planting</NavDropdown.Item>
     <NavDropdown.Item>Others</NavDropdown.Item>
