@@ -1,33 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container } from 'react-bootstrap';
-import { Grid, Card, CardContent, CardActionArea, CardMedia, Typography, withStyles } from '@material-ui/core/';
+import { Container, Jumbotron, Button } from 'react-bootstrap';
 // eslint-disable-next-line
 
-import electronicwaste from '../Data/electronicwaste.json';
+import waste from '../Data/waste.json';
 
-const wordStyle = {
-  color: 'grey'
+const pStyle = {
+  // textAlign: 'left'
+  color: '#bbb'
 };
 
-const styles = theme => ({
-  root: {
-    flex: 1,
-    Grow: 1,
-  },
-  card: {
-    height: 320,
-    width: 250,
-  },
-  media: {
-    height: 250,
-  }
-});
+const imgStyle = {
+  height: '10rem'
+}
+
+const boxStyle = {
+  backgroundColor: 'Transparent',
+  borderStyle: 'solid',
+  borderWidth: '3px',
+  borderColor: '#00FFAA',
+  width: '75vw'
+}
 
 class Waste extends React.Component {
   state = {
     spacing: '12',
-    lists: electronicwaste
+    lists: waste
   };
 
   handleChange = key => (event, value) => {
@@ -35,42 +33,39 @@ class Waste extends React.Component {
       [key]: value,
     });
   };
-
   render() {
     const { classes } = this.props;
-    const { spacing } = this.state;
 
     return (
-      <Container>
-      <Grid justify="center" className={classes.root} spacing={12} item xs={12} container className={classes.demo} justify="center" spacing={Number(spacing)}>
-
-      {this.state.lists.map((x) => {
-        return (
-          <Grid key={x.value} item className="m-2">
-          <Card className={classes.card}>
-          <CardActionArea>
-          <CardMedia className={classes.media} image={require(`../Images/products/${x.value}.jpg`)} />
-          </CardActionArea>
-          <CardContent>
-          <Typography component="subtitle1" variant="subtitle1">
-          {x.title}
-          </Typography>
-          <Typography component="p" style={wordStyle}>
-          CA${x.price}
-          </Typography>
-          </CardContent>
-          </Card>
-          </Grid>
-        )
-      })}
-      </Grid>
-      </Container>
-    );
+      <>
+        {/* <div id ="electronics">
+          <Jumbotron style={boxStyle}>
+            <h1>
+              Electronic Waste
+            </h1>
+          </Jumbotron>
+        </div>
+        <div id ="food">
+          food
+        </div> */}
+        <br />
+        {this.state.lists.map((x) => {
+          return(
+            <div id={x.id}>
+              <Jumbotron style={boxStyle}>
+                <h1>{x.title}</h1>
+                <p style={pStyle}>{x.body}</p>
+                <img src={require(`../Images/waste/${x.value}.svg`)} style={imgStyle} />
+                <br /><br />
+                <Button variant="outline-info">Donate</Button>
+                <Button variant="outline-info">Process</Button>
+              </Jumbotron>
+            </div>
+          )
+        })}
+      </>
+    )
   }
 }
 
-Waste.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(Waste);
+export default Waste;

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "electronics",
+    "title": "Electronic Waste",
+    "body": "Discarded electronics or scrap electronic components",
+    "value": 1
+  },
+  {
+    "id": "food",
+    "title": "Food Waste",
+    "body": "Discarded or uneaten food",
+    "value": 2
+  },
+  {
+    "id": "clothes",
+    "title": "Textile Waste",
+    "body": "Unwanted clothing, garments, shoes, bag, and fabrics",
+    "value": 3
+  },
+  {
+    "id": "plastic",
+    "title": "Plastic items",
+    "body": "Discarded items made of plastic and other polymers such as nylon and polysterene",
+    "value": 4
+  },
+  {
+    "id": "others",
+    "title": "Others",
+    "body": "Other discarded items",
+    "value": 5
+  }
+]

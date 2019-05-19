@@ -18,11 +18,11 @@ function Menu() {
     </NavDropdown>
 
     <NavDropdown title="Recycle Material Requests/Pickups" id="nav-dropdown" className="mx-5">
-    <NavDropdown.Item href="waste">Electronic Waste</NavDropdown.Item>
-    <NavDropdown.Item>Food Waste</NavDropdown.Item>
-    <NavDropdown.Item>Old Clothes/Fabrics</NavDropdown.Item>
-    <NavDropdown.Item>Plastic</NavDropdown.Item>
-    <NavDropdown.Item>Others</NavDropdown.Item>
+    <NavDropdown.Item href="waste#electronics">Electronic Waste</NavDropdown.Item>
+    <NavDropdown.Item href="waste#food">Food Waste</NavDropdown.Item>
+    <NavDropdown.Item href="waste#clothes">Old Clothes/Fabrics</NavDropdown.Item>
+    <NavDropdown.Item href="waste#plastic">Plastic</NavDropdown.Item>
+    <NavDropdown.Item href="waste#others">Others</NavDropdown.Item>
     </NavDropdown>
 
     <NavDropdown title="Events" id="nav-dropdown" className="mx-5">
