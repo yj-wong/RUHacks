@@ -1,5 +1,6 @@
 # Zero_Waste
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 Live link: https://environment-241007.firebaseapp.com/
 
 ## Available Scripts
